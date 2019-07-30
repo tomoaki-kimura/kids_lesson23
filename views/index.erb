@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>配列を使いこなそう</title>
+  </head>
+  <body>
+    <h3>掃除当番を決めるためのプログラムをつくろう</h3>
+    <p>発表ボタンを押すと今日の掃除当番を発表します</p>
+
+    <img src="/robot.png" alt="ロボット画像">
+    <ul>
+      <% @touban.each do |member, place| %>
+        <li><%= member %>が<%= place %>を掃除します</li>
+      <% end %>
+    </ul>
+    <form action="/" method="GET">
+      <input type="submit" value="発表">
+    </form>
+  </body>
+</html>
+
