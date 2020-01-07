@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>配列を使いこなそう</title>
-  </head>
-  <body>
-    <h3>掃除当番を決めるためのプログラムをつくろう</h3>
-    <p>発表ボタンを押すと今日の掃除当番を発表します</p>
 
-    <img src="/robot.png" alt="ロボット画像">
-    <ul>
-      <% @touban.each do |member, place| %>
-        <li><%= member %>が<%= place %>を掃除します</li>
-      <% end %>
-    </ul>
-    <form action="/" method="GET">
-      <input type="submit" value="発表">
-    </form>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>掃除当番を決めるためのプログラムをつくろう</title>
+  <link href="/layout.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="contents">
+    <ul class="result">
+      <p>今日は</p>
+      <ul>
+        <% @touban.each do |member, place| %>
+          <li class="result-item">
+            <span class="name"><%= member %></span>さんが<span class="room"><%= place %></span>を
+          </li>
+        <% end %>
+      </ul>
+      <p>掃除しましょう！</p>
+    </div>
+  </div>
+  <p class="caption">発表ボタンを押すと今日の掃除当番をランダムで決定します。</p>
+  <form action="/" method="GET">
+    <button class="action">発表する</button>
+  </form>
+</div>
+</body>
+
 </html>
 

@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+ul {
+    padding: 0 20px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.wrapper {
+    padding: 30px;
+}
+
+.contents {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/illust.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.result {
+    width: 45%;
+    position: absolute;
+    overflow: hidden;
+    top: 60px;
+    left: 330px;
+    letter-spacing: 1px;
+}
+
+.result p {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.result-item {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.caption {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.action {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: #fff;
+    background-color: #39cc00;
+    cursor: pointer;
+}

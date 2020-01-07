@@ -8,5 +8,3 @@ get '/' do
   # ここまでコードを入力して下さい。
   erb :index
 end
-
-# Lesson3変数を使ってプログラミング
